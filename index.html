@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=M+PLUS+1p:wght@100&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+
+
+
+<style>
+
+*{
+    font-family: 'Cinzel', serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    background-image: url("index.html");
+}
+
+.navbar{
+    height: 585px;
+    width: 14%;
+    background-color: aquamarine;
+    border-radius: 10px;
+    position: fixed;
+    left: 0.5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-pic img{
+    aspect-ratio: 1/1;
+    width: 150px;
+    border-radius: 50%;
+    margin: 12px;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+
+.nav-contents{
+    margin-top: 40px;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    align-items: start;
+    z-index: 2;
+
+}
+
+.nav-contents a{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.nav-contents a:hover{
+    color: #0073a9;
+    text-emphasis: bold;
+    transition: all 200ms ease 20ms;
+}
+
+.home{
+    
+    height: 4000px;
+    width: 85%;
+    background-image: linear-gradient(to bottom, white, pink, lightblue, lightyellow, lightgreen, lightpink, rgb(118, 118, 213), rgb(234, 213, 174), rgb(231, 171, 171));
+    margin-left: 190px;
+    border-radius: 10px;
+    display: flex;
+    /* justify-content:center; */
+    align-items: center;
+    flex-direction: column;
+    
+    
+
+    
+}
+        
+
+.home-content{
+    height: 500px;
+    width: 90%;
+    background: rgba(62, 59, 59, 0.3);
+    backdrop-filter: saturate(250%) blur(5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    /* padding-top: 0px; */
+}
+
+.qualification{
+    height: 500px;
+    width: 90%;
+    background: rgba(62, 59, 59, 0.3);
+    backdrop-filter: saturate(250%) blur(5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    /* padding-top: 50px; */
+
+}
+
+.skills{
+    height: auto;
+    width: 90%;
+    /* background: rgba(62, 59, 59, 0.3);
+    backdrop-filter: saturate(250%) blur(5px); */
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: repeating-radial-gradient(circle at bottom left, #fedc00 0, #fedc00 5.5555555556%, #fcb712 0, #fcb712 11.1111111111%, #f7921e 0, #f7921e 16.6666666667%, #e87f24 0, #e87f24 22.2222222222%, #dd6227 0, #dd6227 27.7777777778%, #dc4c27 0, #dc4c27 33.3333333333%, #ca3435 0, #ca3435 38.8888888889%, #b82841 0, #b82841 44.4444444444%, #953751 0, #953751 50%, #364c88 0, #364c88 55.5555555556%, #16599d 0, #16599d 61.1111111111%, #02609e 0, #02609e 66.6666666667%, #0073a9 0, #0073a9 72.2222222222%, #008aa4 0, #008aa4 77.7777777778%, #239a87 0, #239a87 83.3333333333%, #7cba6d 0, #7cba6d 88.8888888889%, #becc2f 0, #becc2f 94.4444444444%, #e0d81d 0, #e0d81d 100%), repeating-radial-gradient(circle at bottom right, #fedc00 0, #fedc00 5.5555555556%, #fcb712 0, #fcb712 11.1111111111%, #f7921e 0, #f7921e 16.6666666667%, #e87f24 0, #e87f24 22.2222222222%, #dd6227 0, #dd6227 27.7777777778%, #dc4c27 0, #dc4c27 33.3333333333%, #ca3435 0, #ca3435 38.8888888889%, #b82841 0, #b82841 44.4444444444%, #953751 0, #953751 50%, #364c88 0, #364c88 55.5555555556%, #16599d 0, #16599d 61.1111111111%, #02609e 0, #02609e 66.6666666667%, #0073a9 0, #0073a9 72.2222222222%, #008aa4 0, #008aa4 77.7777777778%, #239a87 0, #239a87 83.3333333333%, #7cba6d 0, #7cba6d 88.8888888889%, #becc2f 0, #becc2f 94.4444444444%, #e0d81d 0, #e0d81d 100%);
+    background-blend-mode: overlay;
+
+}
+
+.projects{
+    height: 630px;
+    width: 90%;
+    background: rgba(62, 59, 59, 0.3);
+    backdrop-filter: saturate(250%) blur(5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.pinfo{
+    height: auto;
+    width: 90%;
+    background: rgba(62, 59, 59, 0.3);
+    backdrop-filter: saturate(250%) blur(5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact{
+    height: 250px;
+    width: 90%;
+    background: rgba(62, 59, 59, 0.3);
+    backdrop-filter: saturate(250%) blur(5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact .logos{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.qualidiv{
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+}
+
+.quali{
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+
+}
+
+.quali li{
+    list-style-type: circle;
+}
+
+.para{
+    width: 50%;
+    margin: 20px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.para p{
+    text-align: justify;
+}
+
+.image img{
+    height: 80%;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 50px ;
+    margin-left: 60px;
+}
+
+hr{
+    color: black;
+}
+
+
+
+legend{
+    font-size: 30px;
+}
+
+
+.hards{
+    width:90%;
+    background: rgba(62, 59, 59, 0.3);
+    backdrop-filter: saturate(250%) blur(5px);
+    border-radius: 10px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.softs{
+    width:90%;
+    background: rgba(62, 59, 59, 0.3);
+    backdrop-filter: saturate(250%) blur(5px);
+    border-radius: 10px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.hobs{
+    width:90%;
+    background: rgba(62, 59, 59, 0.3);
+    backdrop-filter: saturate(250%) blur(5px);
+    border-radius: 10px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.hards ul{
+    list-style-type: circle;
+    /* color: white; */
+}
+
+.softs ul{
+    list-style-type: circle;
+    /* color: white; */
+}
+
+.hobs ul{
+    list-style-type: circle;
+    /* color: white; */
+}
+.hardsh, .softsh, .hh{
+    /* margin-left: 50px; */
+    text-align: center;
+}
+
+.ipr{
+    display: flex;
+    flex-direction: row;
+}
+
+.ipr2{
+    width: 65%;
+    margin-left: 10px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.projects p{
+    text-align: justify;
+}
+
+
+.projects img{
+    height: 80%;
+    width: 30%;
+    margin-left: 25px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.pinfo{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact img{
+    width: 150px;
+    aspect-ratio: 1/1;
+    margin: 10px;
+}
+</style>
+
+
+
+<body>
+
+    <div class="main-container">
+        <!-- Navigation block-->
+        <div class="navbar">
+            <div class="nav-pic">
+                <img src="meghome.png" alt="">
+            </div>
+            <div class="nav-contents">
+                <ul>
+                    <a href="#homec"><li>Home</li></a>
+                    <a href="#homeq"><li>Qualifications</li></a>
+                    <a href="#homes"><li>Skills</li></a>
+                    <a href="#homep"><li> Academic Projects</li></a>
+                    <a href="#homei"><li>Personal Info</li></a>
+                    <a href="#homer"><li>Reach me</li></a>
+                </ul>
+            </div>
+        </div>   
+        <!-- Navigation block end-->
+        
+        <div class="home">
+            <hr id="homec">
+            <div class="home-content" >
+                <div class="para">
+                    <h1>Megha ML</h1>
+                    <hr>
+                    <p>
+                        A graduate who is passionate about learning and seeking opportunities to expand 
+                        my knowledge and leverage my learning in the field of work and want to build a valuable skill set.
+                        Passionate about implementing and launching new projects.
+                        Completed an offline PYTHON FULL STACK DEVELOPMENT course in PYSPIDER.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="meg1.jpg" alt="">
+                </div>
+            </div>
+
+            <hr id="homeq">
+            <div class="qualification" >
+                <div class="qualidiv">
+                    <fieldset class="quali">
+                        <legend>Qualifications</legend>
+                        <ul>
+                            <li class="edus"><b>SSLC</b> 
+                                <ul>
+                                    <li>Holy Child Convent</li>
+                                    <ul>
+                                        <li>2006 - 2016</li>
+                                        <ul>
+                                            <li>80%</li>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                            </li>
+                            <li class="edus"><b> Bachelor's of Engineering in Computer Science </b>
+                                <ul>
+                                    <li>K S School Of Engineering and Management</li>
+                                    <ul>
+                                        <li>2018 - 2022</li>
+                                        <ul>
+                                            <li>7.5 CGPA</li>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                            </li>
+                        </ul>
+                    </fieldset>  
+                </div>              
+            </div>
+
+            <hr id="homes">
+            <div class="skills">
+                <div class="hards">
+                    <ul>
+                        <li><b>Full stack Development</b>
+                            <ul>
+                                <li>Front-End development
+                                    <ul>
+                                        <li>HTML
+                                            <ul>
+                                                <li>Tags, Tables, Form, Hypertext, Iframes, etc,.</li>
+                                            </ul>
+                                        </li>
+                                        <li>CSS
+                                            <ul>
+                                                <li>Box Model, Background Gradient, Selectors, Combinators, Psuedo class, Psuedo Elements, Transfrom & Transition, Animation, etc,.</li>
+                                            </ul>
+                                        </li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </li>
+
+                                <li>Back-End development
+                                    <ul>
+                                        <li>Python Foundation Software
+                                            <ul>
+                                                <li>Datatypes, Operators, Functions, Object Oriented Programming, etc.,
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li>Framework
+                                    <ul>
+                                        <li>Django</li>
+                                    </ul>
+                                </li>
+
+                                <li>Database Management
+                                    <ul>
+                                        <li>SQL
+                                            <ul>
+                                                <li>Datatypes, Identifiers, DDL, DML, DCL, TCL, DQL commands, Special operatos, Set operatos, SIngle-Row functions, Multi-Row functions, Joins and Normalization</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="softs">
+                    <h2 class="softsh">Soft Skills</h2>
+                    <ul>
+                        <li><b> Creative Thinker</li></b>
+                        <li><b> Good Communication</li></b>
+                    </ul>
+                </div>
+
+                <div class="hobs">
+                    <h2 class="hh">Hobbies</h2>
+                    <ul>
+                        <li><b> Sketching</li></b>
+                        <li><b> Badminton</li></b>
+                        <li><b> Painting</li></b>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <hr id="homep">
+            <div class="projects">
+                <h1>Academic Project</h1>
+                <div class="ipr">
+                    <div class="ipr2" aligh="center">
+                        <h3>DETECTION OF ROAD WITH LESS AQI AND ALERT THE BEST ROUTE.</h3>
+                        <p>
+                            Under the domain android app development. With the growth of urban transportation and the raise in the number of cars commuting in megacities, the need for a solution to travel healthy for daily activities becomes a place of importance.  
+                            AQI is an index for reporting air quality and its impact on different group of people. Current navigation systems include options for the quickest paths which is based on distance and traffic .  
+                        </p>  
+                    </div>
+            
+
+                </div>
+                
+            </div>
+
+
+            <hr id="homei">
+            <div class="pinfo">
+                <h2>Personal Info</h2>
+                <pre>
+                        Name - Megha ML
+                        Date of Birth - 27<sup>th</sup> June 2000
+                        Father's name - Lokesha P
+                        Mobile - +919538485545
+                        EmailID - mlmegha487@gmail.com
+                        Gender - Female
+                        Religion - Hindu
+                        Languages Known - Kannada,English and Hindi
+                        Address -  No. 991, 9th main BSK 3rd stage Srinivasanagar , Bangalore 560050, Karnataka
+
+                    </pre>
+            </div>
+
+            <hr id="homer">
+            <div class="contact">
+                <h2>Reach me</h2>
+                <div class="logos">
+                    <a href="https://www.linkedin.com/in/megha-ml-35b575221" target="_blank"><img src="LI-In-Bug.png" alt=""></a>
+                    <a href="" target="_blank"><img src="Whatsapp.png" alt=""></a>
+                    <a href="https://github.com/MeghaML2000"><img src="githublogo.png"></a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+
+
+
+
+</html
